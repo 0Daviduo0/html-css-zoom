@@ -14,7 +14,7 @@ header{
     position: fixed;
 }
 
-    .buttonswrapper{
+    #topbuttonswrapper{
         display: flex;
         justify-content: right;
         height: max-content;
@@ -70,12 +70,57 @@ main{
 
 
 footer{
-    height: 50px;
+    height: max-content;
     width: 100%;
     background-color: grey;
-    border: 1px blueviolet solid;
+    /* border: 1px blueviolet solid; */
     position: fixed;
     bottom: 0;
 }
 
+   #botbuttonwrapper{
+    display: flex;
+    justify-content: space-between;
 
+   } 
+
+        #privacy{
+            width: 10%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .icon{
+            font-size: 25px;
+        }
+
+        .caret{
+            font-size: 15px;
+            margin: 0 3px;
+            padding-right: 5px;
+        }
+
+            #microphone{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 5px;
+            }
+
+            #video{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 5px;
+            }
+
+
+        #tools{
+
+        }
+
+        #endcall{
+
+        }
