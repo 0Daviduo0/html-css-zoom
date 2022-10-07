@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -10,8 +11,9 @@ header{
     height: 50px;
     width: 100%;
     background-color: black;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     position: fixed;
+    z-index: 999
 }
 
     #topbuttonswrapper{
@@ -51,16 +53,18 @@ main{
         width: 80%;
         max-width: 1624px;
         min-height: 100vh;
-        border: 1px solid #fff;
+        /* border: 1px solid #fff; */
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        z-index: 0
     }
 
     .videocallbox{
         width: calc( 100% / 7 );
         padding: 5px;
+        position: relative;
     }
 
     img{
@@ -68,11 +72,20 @@ main{
         height: 100%;
     }
 
+    .label{
+        position: absolute;
+        display: flex;
+        color: #fff;
+        display: inline-block;
+        width: fit-content;
+        left: 5px;
+        bottom: 40px;
+        background-color: #4a4a4a85;
+    }
 
 footer{
-    height: max-content;
     width: 100%;
-    background-color: rgb(65, 65, 65);
+    background-color: #222222;
     /* border: 1px blueviolet solid; */
     position: fixed;
     bottom: 0;
@@ -81,13 +94,12 @@ footer{
    #botbuttonwrapper{
     display: flex;
     justify-content: space-between;
-
    } 
 
         #privacy{
             max-width: 200px;
             min-width: 200px;
-            height: 50px;
+            height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -97,6 +109,7 @@ footer{
             font-size: 15px;
             margin: 0 3px;
             padding-right: 5px;
+            color: #fff;
         }
 
             .buttonfooter{
@@ -105,10 +118,12 @@ footer{
                 align-items: center;
                 margin-left: 10px;
                 font-size: 25px;
+                color: #fff;
             }
             
             #buttonname{
                 font-size: 15px;
+                color: #fff;
             }
 
                 .share{
@@ -119,7 +134,7 @@ footer{
         #tools{
             min-width: 550px;
             max-width: 1000px;
-            height: 50px;
+            height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -135,11 +150,12 @@ footer{
         }
 
         #endcallbutton{
-            max-width: 200px;
+            width: 10%;
             min-width: 200px;
-            height: 50px;
+            height: 100%;
+            margin: 10px 0;
             color: red;
-            background-color: grey;
+            background-color: #4a4a4a;
             display: flex;
             align-items: center;
             justify-content: center;
