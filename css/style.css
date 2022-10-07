@@ -14,14 +14,37 @@ header{
     position: fixed;
 }
 
+    .buttonswrapper{
+        display: flex;
+        justify-content: right;
+        height: max-content;
+        padding: 10px;
+    }
+
+    #speakerview{
+        color: #fff;
+        background-color: rgba(128, 128, 128, 0.671);
+        padding: 5px;
+        border-radius: 7px;
+        margin-right: 10px;
+        
+    }
+
+    #fullscreen{
+        color: #fff;
+        background-color: rgba(128, 128, 128, 0.671);
+        padding: 5px;
+        border-radius: 7px;
+    }
+
 
 
 main{
     width: 100%;
     background-color: black;
+    overflow: scroll;
 }
 
-    /* flex wrap per mandare a capo oggetti flex */
     .all-video-cont{
         padding: 100px 0;
         margin: 0 auto;
