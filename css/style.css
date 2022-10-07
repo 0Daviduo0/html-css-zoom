@@ -72,7 +72,7 @@ main{
 footer{
     height: max-content;
     width: 100%;
-    background-color: grey;
+    background-color: rgb(65, 65, 65);
     /* border: 1px blueviolet solid; */
     position: fixed;
     bottom: 0;
@@ -85,7 +85,8 @@ footer{
    } 
 
         #privacy{
-            width: 10%;
+            max-width: 200px;
+            min-width: 200px;
             height: 50px;
             display: flex;
             justify-content: space-between;
@@ -118,9 +119,31 @@ footer{
 
 
         #tools{
-
+            min-width: 550px;
+            max-width: 1000px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         #endcall{
+            max-width: 200px;
+            min-width: 200px;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
+        #endcallbutton{
+            max-width: 200px;
+            min-width: 200px;
+            height: 50px;
+            color: red;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
         }
