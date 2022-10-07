@@ -93,29 +93,27 @@ footer{
             align-items: center;
         }
 
-        .icon{
-            font-size: 25px;
-        }
-
         .caret{
             font-size: 15px;
             margin: 0 3px;
             padding-right: 5px;
         }
 
-            #microphone{
+            .buttonfooter{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-left: 5px;
+                margin-left: 10px;
+                font-size: 25px;
+            }
+            
+            #buttonname{
+                font-size: 15px;
             }
 
-            #video{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-left: 5px;
-            }
+                .share{
+                    color: green;
+                }
 
 
         #tools{
